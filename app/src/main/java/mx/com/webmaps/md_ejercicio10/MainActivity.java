@@ -33,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new OneFragment(),"ITEM ONE");
         adapter.addFragment(new TwoFragment(),"ITEM TWO");
         adapter.addFragment(new ThreeFragment(),"ITEM THREE");
+        adapter.addFragment(new FourFragment(),"ITEM FOUR");
+        adapter.addFragment(new FiveFragment(),"ITEM FIVE");
+        adapter.addFragment(new SixFragment(),"ITEM SIX");
+        adapter.addFragment(new SevenFragment(),"ITEM SEVEN");
+        adapter.addFragment(new EightFragment(),"ITEM EIGHT");
+        adapter.addFragment(new NineFragment(),"ITEM NINE");
+        adapter.addFragment(new TenFragment(),"ITEM TEN");
 
         viewPager.setAdapter(adapter);
 
