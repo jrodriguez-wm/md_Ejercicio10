@@ -30,21 +30,25 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        adapter.addFragment(new OneFragment(),"ITEM ONE");
-        adapter.addFragment(new TwoFragment(),"ITEM TWO");
-        adapter.addFragment(new ThreeFragment(),"ITEM THREE");
-        adapter.addFragment(new FourFragment(),"ITEM FOUR");
+        adapter.addFragment(new OneFragment(),"");
+        adapter.addFragment(new TwoFragment(),"");
+        adapter.addFragment(new ThreeFragment(),"");
+        /*adapter.addFragment(new FourFragment(),"ITEM FOUR");
         adapter.addFragment(new FiveFragment(),"ITEM FIVE");
         adapter.addFragment(new SixFragment(),"ITEM SIX");
         adapter.addFragment(new SevenFragment(),"ITEM SEVEN");
         adapter.addFragment(new EightFragment(),"ITEM EIGHT");
         adapter.addFragment(new NineFragment(),"ITEM NINE");
-        adapter.addFragment(new TenFragment(),"ITEM TEN");
+        adapter.addFragment(new TenFragment(),"ITEM TEN");*/
 
         viewPager.setAdapter(adapter);
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout_id);
         tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.email);
+        tabLayout.getTabAt(1).setIcon(R.drawable.heart);
+        tabLayout.getTabAt(2).setIcon(R.drawable.map);
 
     }
 }
