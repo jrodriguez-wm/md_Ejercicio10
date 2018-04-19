@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        adapter.addFragment(new OneFragment(),"");
-        adapter.addFragment(new TwoFragment(),"");
-        adapter.addFragment(new ThreeFragment(),"");
+        adapter.addFragment(new OneFragment(),"MAIL");
+        adapter.addFragment(new TwoFragment(),"FAVORITES");
+        adapter.addFragment(new ThreeFragment(),"MAP");
         /*adapter.addFragment(new FourFragment(),"ITEM FOUR");
         adapter.addFragment(new FiveFragment(),"ITEM FIVE");
         adapter.addFragment(new SixFragment(),"ITEM SIX");
